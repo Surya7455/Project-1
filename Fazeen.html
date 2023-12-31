@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazeen</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+   <!-- <link rel="stylesheet" href="Home.html">
+    <link rel="stylesheet" href="Login.html">-->
+    <link rel="stylesheet" href="Fazeen.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="wrok.js"></script>
+</head>
+<body >
+    <div class="sidenav">
+        <div class="py-1">
+            <a href="Fazeen.html"><img src="logo.png" alt=""></a>
+        </div>
+        <div class="py-2">
+            <div class="za"><a href="Fazeen.html" title="Dashboards"><i class="material-icons">home</i></a></div>
+            <div class="redeem"><a href="Applications.html" title="Applications"><i class="material-icons">redeem</i></a></div>
+            <div class="layers"><a href="pagelayout.html" title="Pagelayout"><i class="material-icons">layers</i></a></div>
+            <div class="timeline"><a href="components.html" title="Components"><i class="material-icons">timeline</i></a></div>
+        </div>
+        <div class="py-3">
+            <div class="setting"><a href="setting.html" title="Setting"><i class="material-icons">settings</i></a></div>
+            <div class="person"><a href="profile.html" title="Profile"><i class="material-icons">person</i></a></div>
+        </div>
+    </div>
+    <div class="top-nav">
+        <div class="zaq">
+            <div class="qa-1">
+                <div id="xsw" class="xsw">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div><span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <span class="right-1 ">
+                    <span class="search flex-container"><input type="text" placeholder="Search here....">
+                </span>
+                <span>
+                    <span style="cursor: pointer;" id="mode"><img src="moon.png" alt=""></span>
+                </span>
+                <span>
+                    <span class="notifications" style="margin-left: 25px; margin-right: 25px; "><i class="material-icons">notifications</i></span>
+                </span>
+                <span>
+                    <span  class="summary" onclick="myFunction()"><i class="material-icons">apps</i></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <main class="main" id="main">
+        <table class="grid-container-1">
+            <tr>
+                <th class="grid-item-1">1</th>
+                <th class="grid-item-2">1</th>
+                <th class="grid-item-2">1</th>
+            </tr>
+        </table>
+        <table class="grid-container-2">
+            <tr>
+                <td class="grid-item-3">2</td>
+                <td class="grid-item-3">2</td>
+                <td class="grid-item-3">2</td> 
+            </tr>  
+        </table>
+        <table class="grid-container-3">
+            <tr>
+                <td class="grid-item-4">2</td>
+            </tr>
+        </table>
+    </main>
+</body>
+<script>
+    var mode = document.getElementById("mode");
+    mode.onclick=function(){
+  document.body.classList.toggle("dark-theme");
+   if(document.body.classList.contains("dark-theme")){
+     mode.src = "moon.png";
+   }
+   else{
+     mode.src ="sun.png";
+  }
+ }
+</script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="Fazeen.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="wrok.js"></script>
+</head>
+<body>
+    <nav class="nv">
+        <div class="bv">
+            <div id="mySide--nav" class="side--nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Dashboard.html">Dashboard</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span class="ew-1">
+                <span class="er-1" ><i class="material-icons">circle</i></span>
+                <span class="er-2"><i class="material-icons">circle</i></span>
+                <span class="er-3"><i class="material-icons">circle</i></span>
+                <span class="er-4"><i class="material-icons">circle</i></span>
+            </span>
+        </div>
+    </nav>
+    <main class="main-p" id="main-p">
+        <div class="login wer">
+            <div class="login-1">
+                <h1>Login</h1>
+                <form action="##">
+                    <div class="username">
+                        <label for="username">User name</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="email" name="username" placeholder="Username/Gmail" style=" align-items: stretch; border-radius: 10px; padding-left: 10px; height: 30px; width:50%;">
+                    </div>
+                    <div class="password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input">
+                        <input type="password" pattern="[a-z0-5]{8,}" id="password" name="password" style=" align-items: stretch; border-radius: 10px; padding-left: 10px; height: 30px; width:50%;" placeholder="Password">
+                    </div>
+                     <div class="forget">
+                        <a href="forget.html">Forget Password</a>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Login" style="align-items: stretch; border-radius: 20px; background-color: rgb(102, 255, 0); box-shadow: -3px -3px 7px rgb(205, 205, 205) , 3px 3px 5px rgb(91, 88, 88); height: 50px; width: 50%;">
+                    </div>
+                    <div class="sgn">
+                        <div>Need an account?
+                            <a href="signup.html">Sign up</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySide--nav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySide--nav").style.width = "0";
+        }
+   </script>
+</body>
+</html>

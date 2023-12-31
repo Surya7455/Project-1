@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazeen-Signup</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="Fazeen.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="wrok.js"></script>
+</head>
+<body>
+    <nav class="nv">
+        <div class="bv">
+            <div id="mySide--nav" class="side--nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="Dashboard.html">Dashboard</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span class="ew-1">
+                <span class="er-1" ><i class="material-icons">circle</i></span>
+                <span class="er-2"><i class="material-icons">circle</i></span>
+                <span class="er-3"><i class="material-icons">circle</i></span>
+                <span class="er-4"><i class="material-icons">circle</i></span>
+            </span>
+        </div>
+    </nav>
+    <form class="main-sign">
+        <div class="ty-1">
+            <fieldset class="ty-2"><legend style="font-size: xx-large; display: flex; align-items: center ;justify-content: center; flex-wrap: wrap;"><b>Sign up</b></legend>
+                    <fieldset class="field-1"><legend style="font-size: xx-large; display: flex; align-items: center ;justify-content: center;"><b>Personal Information</b></legend>
+                        <div style="text-align: left; padding: 10px; font-size: larger;" >Enter Your First Name:
+                            <span style="float: right;"> <input style="height: 20px; width: 20px; " type="checkbox" name="first-name" id="first-name" checked  /></span>
+                            <div>
+                                <input style="height: 30px; width: 100%; border-radius: 4px;" type="text" id="first-name" required />
+                            </div>
+                        </div>
+                        <div style="text-align: left; padding: 10px; font-size: larger;" >Enter Your Last Name:
+                            <span style=" float: right;"> <input style="height: 20px; width: 20px;" type="checkbox" name="first-name" id="first-last" checked /></span>
+                            <div>
+                                <input style="height: 30px; width: 100%; border-radius: 4px;" type="text" id="last-name" required />
+                            </div>
+                        </div>
+                        <div style="text-align: left; padding: 10px; font-size: larger;" >Enter Your Gmail:
+                            <span style=" float: right;"> <input style="height: 20px; width: 20px;" type="checkbox" name="email" id="email" checked /></span>
+                            <div>
+                                <input style="height: 30px; width: 100%; border-radius: 4px;" type="email" id="email" required />
+                            </div>
+                        </div>
+                        <div style="text-align: left; padding: 10px; font-size: larger;" >Create a New Password:
+                            <span style=" float: right;"> <input style="height: 20px; width: 20px;" type="checkbox" name="new-password" id="new-password" checked /></span>
+                            <div>
+                                <input style="height: 30px; width: 100%; border-radius: 4px;" type="text" id="first-name" pattern="[a-z0-5]{8,}" required  />
+                            </div>
+                        </div>
+                        <div style="text-align: left; padding: 10px; font-size: larger;" >Mobile Number:
+                            <span style=" float: right;"> <input style="height: 20px; width: 20px;" type="checkbox" name="mobile-number" id="mobile-number" checked /></span>
+                            <div>
+                                <input style="height: 30px; width: 100%; border-radius: 4px;" type="number" id="mobile-number" required />
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="field-1"><legend style="font-size: xx-large; display: flex; align-items: center ;justify-content: center;"><b>Gender</b></legend>
+                        <span>
+                            <span style="margin: 20px;">
+                                <input type="radio" name="gender" id="gender" checked >Male
+                            </span>
+                            <span style="margin: 20px;">
+                                <input type="radio" name="gender" id="gender" checked >Female
+                            </span>
+                            <span style="margin: 20px;">
+                                <input type="radio" name="gender" id="gender" checked>Other
+                            </span>
+                        </span>
+                    </fieldset>
+                    <div style="margin: 40px; justify-content: center; align-items: center; display: flex;" >
+                        <input id="terms-and-conditions" type="checkbox" required /> 
+                         I accept the <a href="#">terms and conditions</a>
+                    </div>
+                    <div style="margin: 40px; justify-content: center; align-items: center; display: flex;">
+                        <input style="height: 30px; width: 100px; background-color: white; box-shadow: -3px -3px 7px rgb(117, 116, 116), 3px 3px 5px rgb(117, 116, 116); border-radius: 10px; " type="submit" value="Submit" />
+                    </div>
+           </fieldset>
+        </div>
+    </form>
+    <script>
+         function openNav() {
+            document.getElementById("mySide--nav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySide--nav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
